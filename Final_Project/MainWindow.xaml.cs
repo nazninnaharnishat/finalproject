@@ -25,6 +25,16 @@ namespace Final_Project
             InitializeComponent();
         }
 
-        private void submit_button(object sender, RoutedEventArgs e)
+        private void submit_login(object sender, RoutedEventArgs e)
+        {
+            string email = txtEmail.Text;
+            string phone = phoneBox.Text;
+
+            MessageBox.Show("Login successful!");
+
+            Dashboard dashboardWindow = new Dashboard();
+            dashboardWindow.Show();
+            this.Close();
+        }
     }
 }

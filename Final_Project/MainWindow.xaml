@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Entery Form" Height="350" Width="525">
     <Grid Background="#FFC5C2C2" HorizontalAlignment="Center">
-        <Button x:Name="submit_button" Content="Submit" HorizontalAlignment="Left" Margin="304,250,0,0" VerticalAlignment="Top" Width="91" Background="#FFF9FBCD" Height="31" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="submit_button" Content="Submit" HorizontalAlignment="Left" Margin="304,250,0,0" VerticalAlignment="Top" Width="91" Background="#FFF9FBCD" Height="31" FontSize="14" FontWeight="Bold" Click="submit_login"/>
         <Label x:Name="label" Content="Admin Login" Margin="170,49,162,0" VerticalAlignment="Top" FontSize="30" Width="185" HorizontalAlignment="Center"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="27" Margin="212,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Background="Gainsboro"/>
         <Label x:Name="label1" Content="Email" HorizontalAlignment="Left" Margin="108,140,0,0" VerticalAlignment="Top" Height="27" Width="54" FontSize="16"/>
-        <Label x:Name="label1_Copy4" Content="Password" HorizontalAlignment="Left" Margin="108,199,0,0" VerticalAlignment="Top" Height="27" Width="82" FontSize="16"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="212,199,0,0" VerticalAlignment="Top" Width="200" Height="27" Background="Gainsboro" Password="*"/>
+        <Label x:Name="label1_Copy4" Content="Phone" HorizontalAlignment="Left" Margin="108,199,0,0" VerticalAlignment="Top" Height="27" Width="82" FontSize="16"/>
+        <TextBox x:Name="phoneBox" HorizontalAlignment="Left" Margin="212,199,0,0" VerticalAlignment="Top" Width="200" Height="27" Background="Gainsboro"/>
     </Grid>
 </Window>
