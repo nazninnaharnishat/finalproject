@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
+using System.Data;
+
 
 namespace Final_Project
 {
@@ -29,12 +32,59 @@ namespace Final_Project
         {
             string email = txtEmail.Text;
             string phone = phoneBox.Text;
+            if (AuthenticateAdmin(email, phone))
+            {
 
-            MessageBox.Show("Login successful!");
+                MessageBox.Show("Login successful!");
+                Dashboard dashboardWindow = new Dashboard();
+                dashboardWindow.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid credentials or expired login.");
+            }
 
-            Dashboard dashboardWindow = new Dashboard();
-            dashboardWindow.Show();
-            this.Close();
+           
+        }
+        private bool AuthenticateAdmin(string email, string phone)
+        {
+            bool isAuthenticated = false;
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=hostelmanagement;Uid=root;Pwd=;";
+            try
+            {
+                using (var conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    // MessageBox.Show("Database connection successful!"); // Debugging message
+
+                    string query = @"
+                SELECT COUNT(*) 
+                FROM members m
+                JOIN managerlogs ml ON m.id = ml.manager_id
+                WHERE m.email = @Email
+                AND m.phone = @Phone
+                AND m.is_admin = 1
+                AND ml.active_until > NOW()";
+
+                    var cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@Phone", phone);
+
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (count > 0)
+                    {
+                        isAuthenticated = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}"); // Show the exception message
+            }
+
+            return isAuthenticated;
         }
     }
 }

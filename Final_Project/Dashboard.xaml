@@ -16,13 +16,13 @@
 
         <!-- Menu at the top -->
         <Menu HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="#FFF99797" Margin="1,0,3,0">
-            <MenuItem Header="Dashboard"/>
+            <MenuItem Header="Dashboard" Click="NavigateDashboard"/>
             <MenuItem Header="Members">
-                <MenuItem Header="List Member"  />
-                <MenuItem Header="Add Member" />
+                <MenuItem Header="List Member" Click="NavigateMembers"/>
+                <MenuItem Header="Add Member" Click="NavigateAddMember"/>
             </MenuItem>
-            <MenuItem Header="Par Days Count"  />
-            <MenuItem Header="Fixed Cost" />
+            <MenuItem Header="Par Days Count" Click="NavigateDailyCost"/>
+            <MenuItem Header="Fixed Cost" Click="NavigateFixedCost"/>
         </Menu>
         <DataGrid Grid.Row="1" Name="DemoDataGrid" AutoGenerateColumns="False" Margin="2,33,-2,21" SelectionChanged="DemoDataGrid_SelectionChanged">
             <DataGrid.Columns>

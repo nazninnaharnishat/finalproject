@@ -30,3 +30,11 @@ C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final
 C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\Final_Project.g.resources
 C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\Final_Project.Properties.Resources.resources
 C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\Final_Project.csproj.GenerateResource.Cache
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\AddMemberPage.g.cs
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\DailyCostPage.g.cs
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\FixedCostPage.g.cs
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\MembersPage.g.cs
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\AddMemberPage.baml
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\DailyCostPage.baml
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\FixedCostPage.baml
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\finalproject\Final_Project\obj\Debug\MembersPage.baml

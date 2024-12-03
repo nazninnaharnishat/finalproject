@@ -31,6 +31,37 @@ namespace Final_Project
                 MessageBox.Show("Selection Changed: " + DemoDataGrid.SelectedItem.ToString());
             }
         }
+        private void NavigateDashboard(object sender, RoutedEventArgs e)
+        {
+            // Navigate to another instance of Dashboard (or refresh)
+            var dashboard = new Dashboard();
+            dashboard.Show();
+            this.Close();
+        }
+        private void NavigateMembers(object sender, RoutedEventArgs e)
+        {
+            var membersPage = new MembersPage();
+            membersPage.Show();
+            this.Close();
+        }
+        private void NavigateAddMember(object sender, RoutedEventArgs e)
+        {
+            var addMemberPage = new AddMemberPage();
+            addMemberPage.Show();
+        }
+        private void NavigateDailyCost(object sender, RoutedEventArgs e)
+        {
+            var dailyCostPage = new DailyCostPage();
+            dailyCostPage.Show();
+            this.Close();
+        }
+
+        private void NavigateFixedCost(object sender, RoutedEventArgs e)
+        {
+            var fixedCostPage = new FixedCostPage();
+            fixedCostPage.Show();
+            this.Close();
+        }
 
         private void add_summery_btn(object sender, RoutedEventArgs e)
         {
