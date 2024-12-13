@@ -46,3 +46,9 @@ C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\Wp
 C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\EditMemberWindow.g.cs
 C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\MemberPage.baml
 C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\MemberPage.g.cs
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\DailyCostAddPage.g.cs
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\DailyCostAddPage.baml
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\DailyCostEditPage.baml
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\DailyCostEditPage.g.cs
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\EditSummery.baml
+C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\obj\Debug\EditSummery.g.cs

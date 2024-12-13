@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\shant\OneDrive\Documents\Visual Studio 2015\Projects\HostelManagment\WpfApplication1\App.xaml
-7-738230708
+10-776728818
 
-11-1012089419
+14483500429
 231310161737
-AddMemberPage.xaml;DailyCostPage.xaml;Dashboard.xaml;EditMemberWindow.xaml;MainWindow.xaml;MemberPage.xaml;SummeryAdd.xaml;
+AddMemberPage.xaml;DailyCostAddPage.xaml;DailyCostEditPage.xaml;DailyCostPage.xaml;Dashboard.xaml;EditMemberWindow.xaml;EditSummery.xaml;MainWindow.xaml;MemberPage.xaml;SummeryAdd.xaml;
 
 False
 

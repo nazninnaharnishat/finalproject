@@ -74,11 +74,20 @@
     <Compile Include="AddMemberPage.xaml.cs">
       <DependentUpon>AddMemberPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DailyCostAddPage.xaml.cs">
+      <DependentUpon>DailyCostAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DailyCostEditPage.xaml.cs">
+      <DependentUpon>DailyCostEditPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DailyCostPage.xaml.cs">
       <DependentUpon>DailyCostPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="EditMemberWindow.xaml.cs">
       <DependentUpon>EditMemberWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditSummery.xaml.cs">
+      <DependentUpon>EditSummery.xaml</DependentUpon>
     </Compile>
     <Compile Include="MemberPage.xaml.cs">
       <DependentUpon>MemberPage.xaml</DependentUpon>
@@ -87,6 +96,14 @@
       <DependentUpon>SummeryAdd.xaml</DependentUpon>
     </Compile>
     <Page Include="AddMemberPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DailyCostAddPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DailyCostEditPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -99,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EditMemberWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditSummery.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
