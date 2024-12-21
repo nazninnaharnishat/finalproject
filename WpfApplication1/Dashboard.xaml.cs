@@ -146,6 +146,7 @@ namespace HostelManagment
         {
             var dailyCostPage = new DailyCostPage();
             dailyCostPage.Show();
+            this.Close();
         }
 
         private void add_summery_btn(object sender, RoutedEventArgs e)

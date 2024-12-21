@@ -12,16 +12,13 @@ namespace HostelManagment
             InitializeComponent();
         }
 
-        // Handle Add New Cost Button Click
         private void AddCostButton_Click(object sender, RoutedEventArgs e)
         {
-            // Get data from the form
             int month = int.Parse(((ComboBoxItem)MonthComboBox.SelectedItem).Tag.ToString());
             DateTime date = DatePicker.SelectedDate.Value;
             string cause = CauseTextBox.Text;
             decimal amount = decimal.Parse(AmountTextBox.Text);
 
-            // Insert into database
             InsertDailyCost(month, date, cause, amount);
         }
 

@@ -1,17 +1,33 @@
 ﻿<Window x:Class="HostelManagment.DailyCostPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Daily Cost Management" Height="500" Width="700">
+        Title="Daily Cost Management" Height="300" Width="578.606">
     <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- For Menu -->
+            <RowDefinition Height="*"/>
+            <!-- For DataGrid -->
+        </Grid.RowDefinitions>
+
+        <!-- Menu at the top -->
+        <Menu HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="#FFF99797" Margin="-4,-7,8,0">
+            <MenuItem Header="Dashboard" Click="NavigateDashboard"/>
+            <MenuItem Header="Members">
+                <MenuItem Header="List Member" Click="NavigateMembers"/>
+                <MenuItem Header="Add Member" Click="NavigateAddMember"/>
+            </MenuItem>
+            <MenuItem Header="Par Days Count" Click="NavigateDailyCost"/>
+        </Menu>
         <!-- DataGrid to Display Costs -->
         <DataGrid x:Name="CostDataGrid" AutoGenerateColumns="False" CanUserAddRows="False"
-                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,50,0,10"
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,40,0,20"
                   ItemsSource="{Binding Costs}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
-                <DataGridTextColumn Header="Month" Binding="{Binding MonthName}" Width="100"/>
-                <DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat=dd/MM/yyyy}" Width="100"/>
-                <DataGridTextColumn Header="Cause" Binding="{Binding Cause}" Width="150"/>
+                <DataGridTextColumn Header="Month" Binding="{Binding MonthName}" Width="80"/>
+                <DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat=dd/MM/yyyy}" Width="80"/>
+                <DataGridTextColumn Header="Cause" Binding="{Binding Cause}" Width="120"/>
                 <DataGridTextColumn Header="Amount" Binding="{Binding Amount}" Width="100"/>
                 <DataGridTemplateColumn Header="Actions" Width="150">
                     <DataGridTemplateColumn.CellTemplate>
@@ -30,6 +46,6 @@
 
         <!-- Add New Cost Button -->
         <Button Content="Add New Cost" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top"
-                Margin="0,10,10,0" Click="AddNewCost_Click"/>
+                Margin="0,14,10,0" Click="AddNewCost_Click"/>
     </Grid>
 </Window>

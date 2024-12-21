@@ -68,7 +68,7 @@ namespace HostelManagment
         {
             var addPage = new DailyCostAddPage();
             addPage.ShowDialog();
-            LoadDailyCosts(); // Refresh the list after adding
+            LoadDailyCosts(); 
         }
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
@@ -76,7 +76,7 @@ namespace HostelManagment
             int id = Convert.ToInt32((sender as FrameworkElement).Tag);
             var editPage = new DailyCostEditPage(id);
             editPage.ShowDialog();
-            LoadDailyCosts(); // Refresh the list after editing
+            LoadDailyCosts(); 
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
@@ -86,7 +86,7 @@ namespace HostelManagment
             if (MessageBox.Show("Are you sure you want to delete this entry?", "Confirm Delete", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 DeleteDailyCostFromDatabase(id);
-                LoadDailyCosts(); // Refresh the list after deletion
+                LoadDailyCosts(); 
             }
         }
 
@@ -111,6 +111,28 @@ namespace HostelManagment
             {
                 MessageBox.Show($"Error deleting data: {ex.Message}");
             }
+        }
+        private void NavigateDashboard(object sender, RoutedEventArgs e)
+        {
+            var dashboard = new Dashboard();
+            dashboard.Show();
+            this.Close();
+        }
+        private void NavigateMembers(object sender, RoutedEventArgs e)
+        {
+            var membersPage = new HostelManagement.MemberPage();
+            membersPage.Show();
+        }
+        private void NavigateAddMember(object sender, RoutedEventArgs e)
+        {
+            var addMemberPage = new AddMemberPage();
+            addMemberPage.Show();
+        }
+        private void NavigateDailyCost(object sender, RoutedEventArgs e)
+        {
+            var dailyCostPage = new DailyCostPage();
+            dailyCostPage.Show();
+            this.Close();
         }
     }
 

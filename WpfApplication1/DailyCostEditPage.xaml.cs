@@ -60,8 +60,7 @@ namespace HostelManagment
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            // Logic for canceling the operation
-            this.Close(); // Close the window
+            this.Close();
         }
 
         private void UpdateDailyCost(int id, int month, DateTime date, string couse, decimal amount)

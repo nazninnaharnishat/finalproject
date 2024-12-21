@@ -4,9 +4,7 @@ using MySql.Data.MySqlClient;
 
 namespace HostelManagment
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -16,8 +14,8 @@ namespace HostelManagment
 
         private void submit_login(object sender, RoutedEventArgs e)
         {
-            string email = text_mail.Text; // Ensure the TextBox is named correctly in XAML
-            string password = tex_password.Password; // Ensure the TextBox is named correctly in XAML
+            string email = text_mail.Text; 
+            string password = tex_password.Password; 
 
             if (AuthenticateAdmin(email, password))
             {
